@@ -1,0 +1,224 @@
+.header1-home-page{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-family: fantasy;
+}
+
+a.nav-auth{
+    font-size: 18px;
+    color: rgb(179, 179, 179);
+}
+
+a.nav-auth:hover{
+    color: rgb(216, 216, 216);
+}
+
+a.nav-auth:focus-within{
+   color: rgb(255, 255, 255);
+}
+
+.feedback{
+    direction: rtl;
+}
+
+
+
+
+/* register */
+
+.container-register{
+    padding: 0px 10%;
+}
+
+
+.input-register{
+    height: 112px;
+}
+
+.register-form{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(187, 183, 183);
+    min-height: 450px;
+}
+
+.register-form h1{
+    font-family:fantasy
+}
+
+.btn-register{
+    width: 130px;
+}
+
+.error-message-register {
+    min-height: 60px;
+    margin-bottom: 8px;
+}
+
+.error-message-register small{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    max-width: 230px;
+    word-break:keep-all;
+    border-radius: 15px;
+}
+
+.valid-register{
+    padding: 0px 10%;
+}
+
+.register-valid-message-header{
+    text-align: center;
+    font-family: fantasy;
+}
+
+.register-valid-message-confirm{
+    text-align: center;
+    margin-top: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-break:keep-all;
+}
+
+
+
+
+/* login */
+.input-login{
+    height: 112px;
+}
+
+.container-login{
+    padding: 0px 15%;
+}
+
+.login-form{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(187, 183, 183);
+    min-height: 350px;
+}
+
+.login-form h1{
+    font-family:fantasy
+}
+
+.btn-login{
+    width: 50%;
+    margin: 0px 25%;
+}
+
+.message-login {
+    min-height: 40px;
+}
+
+.message-login small{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    max-width: 230px;
+    word-break:keep-all;
+    border-radius: 15px;
+}
+
+.btn-link-login{
+    height: 60px;
+}
+
+
+/* forgot */
+.input-forgot{
+    height: 112px;
+}
+
+.container-forgot{
+    padding: 0px 15%;
+}
+
+.forgot-form{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(187, 183, 183);
+    min-height: 350px;
+}
+
+.forgot-form h1{
+    font-family:fantasy
+}
+
+.btn-forgot{
+    width: 130px;
+}
+
+.message-forgot {
+    min-height: 40px;
+}
+
+.message-forgot small{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    max-width: 230px;
+    word-break:keep-all;
+    border-radius: 15px;
+}
+
+.link-forgot{
+    text-decoration: none;
+    font-size: 15px;
+}
+.link-forgot:hover{
+    font-size: 16px;
+}
+
+
+/* reset */
+.input-reset{
+    height: 112px;
+}
+
+.container-reset{
+    padding: 0px 15%;
+}
+
+.reset-form{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(187, 183, 183);
+    min-height: 350px;
+}
+
+.reset-form h1{
+    font-family:fantasy
+}
+
+.btn-reset{
+    width: 130px;
+}
+
+.message-reset {
+    min-height: 40px;
+}
+
+.message-reset small{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    max-width: 230px;
+    word-break:keep-all;
+    border-radius: 15px;
+}
+
+
+
+/*my details*/
+
+.modal-message{
+    direction: rtl;
+}
+
+.header-my-details{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
