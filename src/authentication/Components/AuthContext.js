@@ -4,7 +4,6 @@ import {updateTokens} from "../DAL/api"
 import Loader from "../Components/Loader"
 import jwt from "jsonwebtoken"
 import {createCsrfToken} from "../DAL/api"
-import Cookies from "js-cookie";
 
 
 const MINUTE = 60 
