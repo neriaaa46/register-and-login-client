@@ -35,7 +35,6 @@ async function login(user){
 
 
 async function updateTokens(inMemoryToken){
-    console.log(Cookies.get('XSRF-TOKEN'))
     const response = await fetch(`${baseUrl}/refreshToken`, {
         method: 'POST', 
         credentials: 'include',
