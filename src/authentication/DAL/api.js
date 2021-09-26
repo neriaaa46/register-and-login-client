@@ -6,7 +6,8 @@ const baseUrl = "https://register-and-login-app.herokuapp.com"
 async function createCsrfToken(){
     fetch(`${baseUrl}/csrf`, {
         method: 'GET',
-        credentials: 'include'
+        credentials: 'include',
+        headers:{'Content-Type': 'application/json'}
     })
 }
 
