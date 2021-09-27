@@ -28,7 +28,7 @@ function AuthContextProvider({children}){
     useEffect(()=>{
         (async ()=>{
             const {xsrfToken} = createCsrfToken()
-            Cookies.set("XSRF-TOKE", xsrfToken, {domain: 'register-and-login-app.herokuapp.com'})
+            Cookies.set("XSRF-TOKE", xsrfToken)
             const {accessToken} = await updateTokens()
             if(accessToken) {
                 loginHandler()
