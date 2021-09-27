@@ -4,10 +4,11 @@ import { inMemoryToken } from "../Components/AuthContext"
 const baseUrl = "https://register-and-login-app.herokuapp.com"
 
 async function createCsrfToken(){
-    fetch(`${baseUrl}/csrf`, {
+    const response = await fetch(`${baseUrl}/csrf`, {
         method: 'GET',
         credentials: 'include'
     })
+    return response.json()
 }
 
 
