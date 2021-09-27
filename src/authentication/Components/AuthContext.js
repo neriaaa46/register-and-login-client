@@ -27,7 +27,7 @@ function AuthContextProvider({children}){
 
     useEffect(()=>{
         (async ()=>{
-            let xsrfToken = await createCsrfToken()
+            let {xsrfToken} = await createCsrfToken()
             console.log(xsrfToken)
             Cookies.set("XSRF-TOKE", xsrfToken)
             const {accessToken} = await updateTokens()
