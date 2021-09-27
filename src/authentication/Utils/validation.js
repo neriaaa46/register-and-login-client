@@ -88,7 +88,7 @@ const password = {
     errors:[], 
     validations:{
         required: true, 
-        pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})/ 
+        pattern: /^[A-Z](?=.*[a-z])(?=.*[0-9])(?=.{6,})/ 
     }
 }
 
