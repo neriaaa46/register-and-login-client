@@ -4,6 +4,7 @@ import {updateTokens} from "../DAL/api"
 import Loader from "../Components/Loader"
 import jwt from "jsonwebtoken"
 import {createCsrfToken} from "../DAL/api"
+import Cookies from "js-cookie";
 
 
 const MINUTE = 60 
@@ -26,7 +27,8 @@ function AuthContextProvider({children}){
 
     useEffect(()=>{
         (async ()=>{
-            createCsrfToken()
+            const {xsrfToken} = createCsrfToken()
+            Cookies.set("XSRF-TOKEN", xsrfToken, {domain: 'register-and-login-app.herokuapp.com'})
             const {accessToken} = await updateTokens()
             if(accessToken) {
                 loginHandler()
