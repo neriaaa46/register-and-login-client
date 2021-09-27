@@ -39,7 +39,7 @@ async function updateTokens(inMemoryToken){
         method: 'POST', 
         credentials: 'include',
         headers:{'Content-Type': 'application/json',
-                 'x-xsrf-token': Cookies.get('XSRF-TOKEN'),
+                 'x-xsrf-token': Cookies.get('XSRF-TOKEN', { domain: 'register-and-login-app.herokuapp.com' }), 
                  'authorization': `Bearer ${inMemoryToken}`}
     })
     return response.json()
